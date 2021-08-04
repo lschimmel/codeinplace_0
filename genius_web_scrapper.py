@@ -116,45 +116,6 @@ def get_lyrics(artist_name, song_title):
     # print(song_lyrics)
     return song_lyrics
 
-# def get_lyrics_text(text):
-#     # text = "lyrics_missyelliott_imbetter.txt"
-#     txt_file = open(text, "r", errors="ignore", encoding="utf-8")
-#     # words = list(txt_file)
-#     # print(words)
-#     lyrics = []
-#     line = txt_file.read().replace("\n", " ") ##puts whole lyrics into string
-#     ## remove punctuation from items in list, to allow for word comparisons
-#     line = line.replace('(', '')
-#     line = line.replace(')', '')
-#     line = line.replace('[', '[ ')
-#     line = line.replace(']', ' ]')
-#     line = line.replace('!', ' !')
-#     line = line.replace('?', ' ?')
-#     line = line.replace(';', ' ;')
-#     line = line.replace(',', ' ,')
-#
-#     word = line.split(' ') ##split string into list, based on spaces
-#     lyrics.append(word)
-#     txt_file.close()
-
-
-# def get_today_date():
-#     today = date.today()
-#     d1 = today.strftime('%d%m%Y')
-#     return d1
-
-# def write_csv(artist_song_dict, date, lyrics):
-#     csv_name = 'songs' + str(date) + '.csv'
-#     print(csv_name)
-#     with open(csv_name, "w", newline='') as f:
-#         writer = csv.writer(f)
-#         writer.writerow(["rank", "title", "artist", "genius_url", "lyrics"])
-#         for i in range(len(artist_song_dict)):
-#             writer.writerows([
-#                 # [genius_url[elem][0], genius_url[elem][1], genius_url[elem][2], genius_url[elem][3], html]
-#                  [i + 1,artist_song_dict[i][0], artist_song_dict[i][1], artist_song_dict[i][2], lyrics]
-#             ])
-
 
 
 if __name__ == "__main__":
